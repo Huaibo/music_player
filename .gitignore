@@ -11,8 +11,9 @@
 # production
 /build
 
-#Webstorm
+# webstorm
 /.idea
+.xml
 
 # misc
 .DS_Store
