@@ -1,19 +1,19 @@
 import React from 'react'
 import Progress from '../components/progress'
 import './player.less'
+import {MUSIC_LIST} from "../config/list";
 
 let duration=null;
 
 class Player extends React.Component{
-    getInitialState(){
-        return{
-            progress:0,
+    constructor(props) {
+        super(props);
+        this.state = { progress:0,
             volume:0,
-            isPlay:true
-        }
-    };
+            isPlay:true};
+    }
     componentDidMount(){
-        $("#player").bind($.jPlayer.event.timeupdate,(e) => {
+        $("#player").on($.jPlayer.event.timeupdate,(e) => {
             duration=e.jPlayer.status.duration;
             this.setState({
                 volume:e.jPlayer.options.volume*100,
