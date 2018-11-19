@@ -1,17 +1,17 @@
 import React from 'react'
 import './progress.less'
 
-let Progress=React.createClass({
+class Progress extends React.Component{
     getDefaultProps(){
         return {
             barColor:'#2f9842'
         }
-    },
+    };
     changeProgress(e){
         let progressBar=this.refs.progressBar;
         let progress=(e.clientX-progressBar.getBoundingClientRect().left)/(progressBar.clientWidth);
         this.props.onProgressChange && this.props.onProgressChange(progress);
-    },
+    };
     render(){
         return (
             <div className="components-progress" ref="progressBar" onClick={this.changeProgress}>
@@ -21,6 +21,6 @@ let Progress=React.createClass({
             </div>
         )
     }
-});
+}
 
 export default Progress;

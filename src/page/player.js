@@ -4,14 +4,14 @@ import './player.less'
 
 let duration=null;
 
-let Player=React.createClass({
+class Player extends React.Component{
     getInitialState(){
         return{
             progress:0,
             volume:0,
             isPlay:true
         }
-    },
+    };
     componentDidMount(){
         $("#player").bind($.jPlayer.event.timeupdate,(e) => {
             duration=e.jPlayer.status.duration;
@@ -20,10 +20,10 @@ let Player=React.createClass({
                 progress:e.jPlayer.status.currentPercentAbsolute
             })
         });
-    },
+    };
     componentWillUnmount(){
         $("#player").unbind($.jPlayer.event.timeupdate);
-    },
+    };
     progressChangeHandler(progress){
         //点击暂停后再点击歌曲进度条防止暂停图标不变化
         this.setState({
@@ -32,13 +32,13 @@ let Player=React.createClass({
         // console.log('from root widget',progress)
         // $('#player').jPlayer(this.state.isPlay?'play':'pause',duration * progress);
         $("#player").jPlayer('play',duration * progress);
-    },
+    };
     changeVolumeHandler(progress){
         this.setState({
             volume: progress * 100,
         });
         $("#player").jPlayer('volume',progress);
-    },
+    };
     play(){
         if(this.state.isPlay){
             $("#player").jPlayer('pause');
@@ -48,7 +48,7 @@ let Player=React.createClass({
         this.setState({
             isPlay:!this.state.isPlay
         });
-    },
+    };
     render(){
         return (
             <div className="player-page">
@@ -60,7 +60,7 @@ let Player=React.createClass({
                         <div className="row mt20">
                             <div className="left-time -col-auto">-2:00</div>
                             <div className="volume-container">
-                                <i className="icon-volume rt" style={{top:5}}></i>
+                                <i className="icon-volume rt" style={{top: 5}}/>
                                 <div className="volume-wrapper">
                                     <Progress progress={this.state.volume} onProgressChange={this.changeVolumeHandler} barColor="#aaa">
 
@@ -74,12 +74,12 @@ let Player=React.createClass({
                         </div>
                         <div className="mt35 row">
                             <div>
-                                <i className="icon prev"></i>
-                                <i className={`icon ml20 ${this.state.isPlay?'pause':'play'}`} onClick={this.play}></i>
-                                <i className="icon next ml20"></i>
+                                <i className="icon prev"/>
+                                <i className={`icon ml20 ${this.state.isPlay ? 'pause' : 'play'}`} onClick={this.play}/>
+                                <i className="icon next ml20"/>
                             </div>
                             <div className="-col-auto">
-                                <i className="icon repeat-cycle"></i>
+                                <i className="icon repeat-cycle"/>
                             </div>
                         </div>
                     </div>
@@ -90,6 +90,6 @@ let Player=React.createClass({
             </div>
         )
     }
-});
+}
 
 export default Player;

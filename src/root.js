@@ -1,14 +1,14 @@
 import React from 'react'
 import Header from './components/header'
 import Player from './page/player'
-import { MUSIC_LIST } from './config/musiclist'
+import { MUSIC_LIST } from './config/list'
 
-let Root=React.createClass({
+class Root extends React.Component{
     getInitialState(){
         return{
             currentMusicItem:MUSIC_LIST[0]
         }
-    },
+    };
     componentDidMount(){
         $("#player").jPlayer({
             ready:function(){
@@ -20,11 +20,11 @@ let Root=React.createClass({
             supplied:'mp3',
             vmode:'window'
         });
-    },
+    };
     componentWillUnmount(){
-    },
+    };
     progressChangeHandler(progress){
-    },
+    };
     render(){
         return (
             <div>
@@ -35,6 +35,6 @@ let Root=React.createClass({
             </div>
         )
     }
-});
+}
 
 export default Root;
