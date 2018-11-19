@@ -1,16 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3a5d7c72-ae8b-43e7-96cd-65fdfc8c515f" name="Default Changelist" comment="mp: change refs string to create refs/ delete jquery dependency">
+    <list default="true" id="3a5d7c72-ae8b-43e7-96cd-65fdfc8c515f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/progress.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/progress.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/player.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/player.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/root.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/root.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -89,7 +83,7 @@
         <entry file="file://$PROJECT_DIR$/public/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="60">
-              <caret line="2" column="6" lean-forward="true" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+              <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -97,8 +91,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/page/player.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-540">
-              <caret column="25" lean-forward="true" selection-start-column="25" selection-end-column="25" />
+            <state relative-caret-position="150">
+              <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
+              <folding>
+                <element signature="e#0#25#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -333,7 +330,7 @@
       <workItem from="1542469538404" duration="1904000" />
       <workItem from="1542571721156" duration="858000" />
       <workItem from="1542585692295" duration="597000" />
-      <workItem from="1542648468201" duration="14016000" />
+      <workItem from="1542648468201" duration="15389000" />
     </task>
     <task id="LOCAL-00001" summary="mp: upload proj">
       <created>1542352870065</created>
@@ -356,22 +353,22 @@
       <option name="project" value="LOCAL" />
       <updated>1542651510150</updated>
     </task>
-    <task id="LOCAL-00004" summary="mp: init react environment">
-      <created>1542350793509</created>
+    <task id="LOCAL-00004" summary="mp: change refs string to create refs/ delete jquery dependency">
+      <created>1542666272212</created>
       <option name="number" value="00004" />
       <option name="presentableId" value="LOCAL-00004" />
       <option name="project" value="LOCAL" />
-      <updated>1542350793509</updated>
+      <updated>1542666272212</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21545000" />
+    <option name="totallyTimeSpent" value="22918000" />
   </component>
   <component name="TodoView" selected-index="1" />
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1295" height="695" extended-state="7" />
+    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49867374" visible="true" weight="0.16613673" />
       <window_info id="Structure" order="1" sideWeight="0.50132626" side_tool="true" weight="0.24960254" />
@@ -386,8 +383,8 @@
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.27106518" weight="0.31494662" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.37519872" side_tool="true" visible="true" weight="0.10854092" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.6248013" visible="true" weight="0.10854092" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.29650238" side_tool="true" visible="true" weight="0.29537368" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.7034976" visible="true" weight="0.29537368" />
       <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.49761525" weight="0.23131673" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -535,7 +532,7 @@
     <entry file="file://$PROJECT_DIR$/public/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
-          <caret line="2" column="6" lean-forward="true" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
         </state>
       </provider>
     </entry>
@@ -551,8 +548,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/page/player.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-540">
-          <caret column="25" lean-forward="true" selection-start-column="25" selection-end-column="25" />
+        <state relative-caret-position="150">
+          <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
