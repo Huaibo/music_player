@@ -2,6 +2,20 @@ import React from 'react'
 import Header from './components/header'
 import Player from './page/player'
 import { MUSIC_LIST } from './config/list'
+import { connect } from 'react-redux';
+import { actions } from 'react-jplayer';
+
+
+const mapStateToProps = state => ({
+    showRemainingDuration: state.jPlayers.AudioPlayer.showRemainingDuration,
+});
+
+const Component = ({ showRemainingDuration, dispatch }) =>
+    <div onClick={() => dispatch(actions.setOption('AudioPlayer', 'showRemainingDuration', !showRemainingDuration))}>
+        Toggle Duration
+    </div>;
+
+export default connect(mapStateToProps)(Component);
 
 class Root extends React.Component{
     constructor(props) {

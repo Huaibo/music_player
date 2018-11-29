@@ -1,7 +1,8 @@
 import React from 'react'
 import Progress from '../components/progress'
 import './player.less'
-import {MUSIC_LIST} from "../config/list";
+import { connect } from 'react-redux';
+import { actions } from 'react-jplayer';
 
 let duration=null;
 
@@ -52,7 +53,7 @@ class Player extends React.Component{
     render(){
         return (
             <div className="player-page">
-                <h1 className="caption">我的私人音乐坊 &gt;</h1>
+                <h1 className="caption">Music player &gt;</h1>
                 <div className="mt20 row">
                     <div className="controll-wrapper">
                         <h2 className="music-title">{this.props.currentMusicItem.title}</h2>
